@@ -3,3 +3,121 @@
 @import "settings";
 
 @import "mixin";
+
+.container {
+  padding-inline: min(6.25vw, 120px);
+}
+
+.content {
+  &__container {
+    padding-top: min(2.60vw, 50px);
+
+    column-gap: min(1.04vw, 20px);
+  }
+}
+
+.main {
+  padding: min(2.08vw, 40px);
+  border-radius: min(.52vw, 10px);
+  background-color: #f5f5f5;
+
+  &__service {
+    width: 50%;
+  }
+
+  &__calendar {
+    width: 50%;
+  }
+}
+
+.rightBlock {
+  width: 50%;
+}
+
+.leftBlock {
+  width: 50%;
+
+  &__serviceBlock {
+    column-gap: min(1.04vw, 20px);
+  }
+}
+
+.contact {
+  & ul {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: min(.52vw, 10px);
+
+    & > li {
+      width: max-content;
+      padding: min(.52vw, 10px) min(1.04vw, 20px);
+      border: 1px solid black;
+      border-radius: min(.52vw, 10px);
+      font-size: min(.63vw, 12px);
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      color: #000000;
+    }
+  }
+
+  &__img {
+    @include back_img;
+    width: min(14.38vw, 276px);
+    height: min(18.28vw, 351px);
+    border-radius: min(.52vw, 10px);
+    background-image: url(../img/contact__img.jpg);
+  }
+
+  &__top {
+    margin-bottom: min(1.56vw, 30px);
+    padding-bottom: min(1.56vw, 30px);
+    border-bottom: 1px solid rgba(185, 24, 39, 1);
+
+    column-gap: min(.52vw, 10px);
+  }
+
+  &__descrMan {
+    & > h1 {
+      margin-bottom: min(.94vw, 18px);
+      font-size: min(1.98vw, 38px);
+      font-weight: 700;
+      font-style: normal;
+      line-height: min(1.98vw, 38px);
+      color: #b91827;
+    }
+
+    & > span {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: min(1.20vw, 23px);
+      padding-left: min(1.04vw, 20px);
+      font-size: min(.94vw, 18px);
+      font-weight: 500;
+      font-style: normal;
+      line-height: normal;
+      color: #000000;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: min(.78vw, 15px);
+        height: min(.78vw, 15px);
+        border-radius: 100%;
+        background-color: #07d200;
+      }
+    }
+  }
+
+  &__post {
+    margin-bottom: min(.78vw, 15px);
+    font-size: min(1.04vw, 20px);
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
+  }
+}
