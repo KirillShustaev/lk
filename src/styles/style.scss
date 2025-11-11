@@ -9,10 +9,63 @@
 }
 
 .content {
+  margin-bottom: min(3.65vw, 70px);
+
   &__container {
     padding-top: min(2.60vw, 50px);
 
     column-gap: min(1.04vw, 20px);
+  }
+}
+
+.estim {
+  border-radius: min(.52vw, 10px);
+  background-color: white;
+
+  &__list {
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    &:last-child {
+      & .estim__proc {
+        background-color: #def1db;
+      }
+    }
+  }
+
+  &__proc {
+    width: 100%;
+    font-family: "Benzin";
+    font-size: min(1.04vw, 20px);
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
+    text-align: center;
+    background-color: #e9e9e9;
+
+    padding-block: min(.26vw, 5px);
+
+
+  }
+
+  &__date {
+    width: 100%;
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: min(1.04vw, 20px);
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #0e0e0e;
+    text-align: center;
+
+    padding-block: min(1.46vw, 28px) min(1.15vw, 22px);
   }
 }
 
@@ -21,12 +74,220 @@
   border-radius: min(.52vw, 10px);
   background-color: #f5f5f5;
 
+  &:not(:last-child) {
+    margin-bottom: min(1.04vw, 20px);
+  }
+
   &__service {
     width: 50%;
   }
 
   &__calendar {
     width: 50%;
+  }
+
+  &__titleDirector {
+    margin-bottom: min(1.04vw, 20px);
+    font-size: min(1.25vw, 24px) !important;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #b91827;
+  }
+
+  & h2 {
+    margin-bottom: min(1.04vw, 20px);
+    font-size: min(1.04vw, 20px);
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #b91827;
+  }
+}
+
+.achiev {
+  &__top {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: min(.52vw, 10px);
+
+    column-gap: min(.52vw, 10px);
+  }
+
+  &__iconBlock {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    row-gap: min(.16vw, 3px);
+  }
+
+  &__blockTop {
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    min-height: min(7.14vw, 137px);
+    border-radius: min(.52vw, 10px);
+    background-color: white;
+
+    column-gap: min(.52vw, 10px);
+
+    &_event {
+      align-items: flex-start;
+    }
+  }
+
+  &__icon {
+    width: min(4.06vw, 78px);
+    height: min(4.06vw, 78px);
+    border: 1px solid black;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: min(3.07vw, 59px) min(3.07vw, 59px);
+
+    &_1 {
+      background-image: url(../img/icon_awards_1.png);
+    }
+
+    &_2 {
+      background-image: url(../img/icon_awards_2.png);
+    }
+
+    &_3 {
+      background-image: url(../img/icon_awards_3.png);
+    }
+
+    &_4 {
+      background-image: url(../img/icon_awards_4.png);
+    }
+
+    &_5 {
+      background-image: url(../img/icon_awards_5.png);
+    }
+
+    &_6 {
+      background-image: url(../img/icon_awards_6.png);
+    }
+
+    &_7 {
+      background-image: url(../img/icon_awards_7.png);
+    }
+
+    &_8 {
+      background-image: url(../img/icon_awards_8.png);
+    }
+  }
+
+  &__bottom {
+    padding: min(1.15vw, 22px) min(1.56vw, 30px);
+    border-radius: min(.52vw, 10px);
+    background-color: #ffffff;
+
+    column-gap: min(.47vw, 9px);
+  }
+
+  &__awards {
+    font-family: "Benzin";
+    font-size: min(.83vw, 16px);
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
+    text-align: center;
+    // letter-spacing: .48px;
+  }
+
+  &__eventNum {
+    text-align: center;
+  }
+
+  &__mag {
+    max-width: 45%;
+    font-size: min(.83vw, 16px);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 18px; /* 112.5% */
+    color: #000000;
+    text-align: center;
+  }
+
+  &__coin {
+    font-family: "Benzin";
+    font-size: min(1.56vw, 30px);
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
+    text-align: center;
+  }
+
+  &__coinImg {
+    @include back_img;
+    width: min(1.56vw, 30px);
+    height: min(1.56vw, 30px);
+    background-image: url(../img/coin.svg);
+  }
+
+  &__event {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: min(1.04vw, 20px);
+
+    & > span {
+      display: block;
+      max-width: 60%;
+      margin-bottom: min(.52vw, 10px);
+      font-size: min(.83vw, 16px);
+      font-weight: 500;
+      font-style: normal;
+      line-height: 18px; /* 112.5% */
+      color: #000000;
+      text-align: center;
+    }
+  }
+
+  &__eventNum {
+    font-family: "Benzin";
+    font-size: min(1.56vw, 30px);
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
+    text-align: center;
+  }
+}
+
+.dir {
+  align-items: center;
+
+  &__img {
+    @include back_img;
+    width: min(5.10vw, 98px);
+    height: min(6.46vw, 124px);
+    margin-right: min(1.04vw, 20px);
+    border-radius: min(.52vw, 10px);
+    background-image: url(../img/p.jpg);
+  }
+
+  &__name {
+    margin-bottom: min(.52vw, 10px);
+    font-size: min(1.04vw, 20px);
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
+  }
+
+  &__post {
+    display: block;
+    max-width: min(22.81vw, 438px);
+    font-size: min(.73vw, 14px);
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
   }
 }
 
@@ -43,34 +304,87 @@
 }
 
 .contact {
-  & ul {
-    display: flex;
-    flex-direction: column;
+  &__bottom {
+    margin-bottom: min(1.04vw, 20px);
+    font-size: min(1.04vw, 20px);
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #b91827;
 
-    row-gap: min(.52vw, 10px);
+    & > ul {
+      display: flex;
+      flex-wrap: wrap;
 
-    & > li {
-      width: max-content;
-      padding: min(.52vw, 10px) min(1.04vw, 20px);
-      border: 1px solid black;
-      border-radius: min(.52vw, 10px);
-      font-size: min(.63vw, 12px);
-      font-weight: 400;
-      font-style: normal;
-      line-height: normal;
-      color: #000000;
+      column-gap: min(3.65vw, 70px);
+
+      & > li {
+        width: max-content;
+        min-width: min(8.59vw, 165px);
+        max-width: min(11.56vw, 222px);
+
+        & span {
+          display: flex;
+        }
+
+        & span:first-child {
+          margin-bottom: min(.26vw, 5px);
+          font-size: min(.83vw, 16px);
+          font-weight: 400;
+          font-style: normal;
+          line-height: normal;
+          color: #646464;
+        }
+
+        & span:last-child {
+          font-size: min(.83vw, 16px);
+          font-weight: 400;
+          font-style: normal;
+          line-height: normal;
+          color: #000000;
+        }
+      }
     }
+  }
+
+  &__num {
+    position: relative;
+    align-items: center;
+    padding-left: min(1.04vw, 20px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: min(.83vw, 16px);
+      height: min(.83vw, 16px);
+      padding-left: min(1.04vw, 20px);
+      background-image: url(../img/solar_phone-outline.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  & h2 {
+    margin-bottom: min(1.04vw, 20px);
+    font-size: min(1.04vw, 20px);
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: #b91827;
   }
 
   &__img {
     @include back_img;
     width: min(14.38vw, 276px);
-    height: min(18.28vw, 351px);
+    min-height: 100%;
     border-radius: min(.52vw, 10px);
     background-image: url(../img/contact__img.jpg);
   }
 
   &__top {
+    height: 100%;
     margin-bottom: min(1.56vw, 30px);
     padding-bottom: min(1.56vw, 30px);
     border-bottom: 1px solid rgba(185, 24, 39, 1);
@@ -119,5 +433,24 @@
     font-style: normal;
     line-height: normal;
     color: #000000;
+
+    & + ul {
+      display: flex;
+      flex-direction: column;
+
+      row-gap: min(.52vw, 10px);
+
+      & > li {
+        width: max-content;
+        padding: min(.52vw, 10px) min(1.04vw, 20px);
+        border: 1px solid black;
+        border-radius: min(.52vw, 10px);
+        font-size: min(.63vw, 12px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+      }
+    }
   }
 }
