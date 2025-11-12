@@ -23,7 +23,9 @@
   background-color: white;
 
   &__list {
+    overflow: hidden;
     width: 100%;
+    border-radius: min(.52vw, 10px);
   }
 
   &__item {
@@ -31,15 +33,23 @@
     align-items: center;
     flex-direction: column;
     width: 20%;
-    &:last-child {
-      & .estim__proc {
-        background-color: #def1db;
-      }
+
+    // &:last-child {
+    //   & .estim__proc {
+    //     background-color: #def1db;
+    //   }
+    // }
+
+    &:not(:last-child) {
+      border-right: 1px solid #e9e9e9;
     }
   }
 
   &__proc {
+    position: relative;
+    overflow: visible;
     width: 100%;
+    min-height: min(2.08vw, 40px);
     font-family: "Benzin";
     font-size: min(1.04vw, 20px);
     font-weight: 400;
@@ -51,12 +61,21 @@
 
     padding-block: min(.26vw, 5px);
 
-
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1000;
+      top: 0;
+      right: -3px;
+      display: none;
+      width: 5px;
+      height: 100%;
+      background-color: #75c669;
+    }
   }
 
   &__date {
     width: 100%;
-    border-right: 1px solid #e9e9e9;
     border-bottom: 1px solid #e9e9e9;
     font-size: min(1.04vw, 20px);
     font-weight: 500;
@@ -66,6 +85,19 @@
     text-align: center;
 
     padding-block: min(1.46vw, 28px) min(1.15vw, 22px);
+  }
+
+  &__level {
+    font-family: "TT Moscow Economy";
+    font-size: min(3.33vw, 64px);
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: black;
+
+    -webkit-text-stroke-color: black;
+    padding-block: min(2.03vw, 39px) min(2.45vw, 47px);
+    -webkit-text-stroke-width: 1px;
   }
 }
 
@@ -352,6 +384,14 @@
     align-items: center;
     padding-left: min(1.04vw, 20px);
 
+    & > a {
+      font-size: min(.83vw, 16px);
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      color: #000000;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -363,6 +403,12 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
+    }
+
+    &_mail {
+      &::after {
+        background-image: url(../img/tabler_mail.svg);
+      }
     }
   }
 
@@ -453,4 +499,77 @@
       }
     }
   }
+}
+
+.green {
+  color: #57da23;
+
+  -webkit-text-stroke-color: #119400;
+}
+
+.yellow {
+  color: #f3de54;
+
+  -webkit-text-stroke-color: #b7a218;
+}
+
+.back_proc {
+  background-color: #def1db;
+}
+
+.lastElemLine.estim__proc::after {
+  display: block;
+}
+
+.service {
+  &__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: min(1.04vw, 20px);
+  }
+
+  &__item {
+    width: 46%;
+    min-height: min(8.59vw, 165px);
+    border-radius: min(.52vw, 10px);
+    background-color: white;
+  }
+
+  &__svg {
+    @include back_img;
+    width: min(.89vw, 17px);
+    height: min(.89vw, 17px);
+    background-image: url(../img/star.svg);
+  }
+
+  &__linkMain {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: min(.78vw, 15px);
+    font-size: min(.83vw, 16px);
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    color: #000000;
+    text-align: left;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      column-gap: min(.26vw, 5px);
+    }
+  }
+}
+
+.calendar {
+  width: 50%;
+  height: min(24.84vw, 477px);
+}
+
+.main__calendar {
+  margin-bottom: 0 !important;
 }
