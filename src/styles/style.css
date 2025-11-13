@@ -666,7 +666,7 @@ hr {
   font-size: min(0.83vw, 16px);
   font-weight: 500;
   font-style: normal;
-  line-height: 18px; /* 112.5% */
+  line-height: min(0.94vw, 18px); /* 112.5% */
   color: #000000;
   text-align: center;
 }
@@ -966,4 +966,93 @@ hr {
 
 .main__calendar {
   margin-bottom: 0 !important;
+}
+
+.common__descrBlock:not(:last-child) {
+  margin-bottom: min(1.04vw, 20px);
+}
+.common__descrBlock > span:first-child {
+  display: block;
+  margin-bottom: min(0.26vw, 5px);
+  font-size: min(0.83vw, 16px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #646464;
+}
+.common__descrBlock > span:last-child {
+  font-size: min(0.83vw, 16px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #000000;
+}
+.common__interestList {
+  flex-wrap: wrap;
+  -moz-column-gap: min(0.31vw, 6px);
+       column-gap: min(0.31vw, 6px);
+}
+.common__interest {
+  width: -moz-max-content;
+  width: max-content;
+  padding: min(0.52vw, 10px) min(1.04vw, 20px);
+  border: 1px solid #000000;
+  border-radius: min(0.52vw, 10px);
+  font-size: min(0.63vw, 12px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #000000;
+}
+
+.edu__descrBlock:not(:last-child) {
+  margin-bottom: min(1.04vw, 20px);
+}
+.edu__descrBlock:last-child {
+  margin-bottom: min(2.5vw, 48px);
+}
+.edu__descrBlock > span:first-child {
+  display: block;
+  margin-bottom: min(0.26vw, 5px);
+  font-size: min(0.83vw, 16px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #646464;
+}
+.edu__descrBlock > span:last-child {
+  font-size: min(0.83vw, 16px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #000000;
+}
+
+.comp {
+  min-height: min(20.05vw, 385px);
+}
+.comp__mainBlock > span:first-child {
+  display: block;
+  margin-bottom: min(0.26vw, 5px);
+  font-size: min(0.83vw, 16px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #646464;
+}
+.comp__item {
+  width: -moz-max-content;
+  width: max-content;
+  padding: min(0.52vw, 10px) min(1.04vw, 20px);
+  border: 1px solid #000000;
+  border-radius: min(0.52vw, 10px);
+  font-size: min(0.63vw, 12px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #000000;
+}
+.comp__list {
+  flex-wrap: wrap;
+  gap: min(0.31vw, 6px);
 }/*# sourceMappingURL=style.css.map */
