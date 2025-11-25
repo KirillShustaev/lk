@@ -1,0 +1,361 @@
+<style type="text/css">
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Рабочая информация */
+    .online {
+        color: green;
+    }
+
+    .photo {
+        color: black;
+    }
+
+    .fio {
+        color: black;
+    }
+
+    .post {
+        color: black;
+    }
+
+    .ca {
+        color: black;
+    }
+
+    .worktel {
+        color: black;
+    }
+
+    .mobtel {
+        color: black;
+    }
+
+    .intertel {
+        color: black;
+    }
+
+    .email {
+        color: black;
+    }
+
+    .worplkace {
+        color: black;
+    }
+
+    /* Руководитель */
+    .photodirector {
+        color: black;
+    }
+
+    .fiodirector {
+        color: black
+    }
+
+    .postdirector {
+        color: black;
+    }
+
+    /* Общие сведения */
+    .birthdate {
+        color: black;
+    }
+
+    .age {
+        color: black;
+    }
+
+    .workbegindate {
+        color: black;
+    }
+
+    .experience {
+        color: black;
+    }
+
+    .bio {
+        color: black;
+    }
+
+    .quote {
+        color: black;
+    }
+
+    .interests {
+        color: black;
+    }
+
+    /* Образование */
+    .eduorg {
+        color: black;
+    }
+
+    .speciality {
+        color: black;
+    }
+
+    .additionalspecialities {
+        color: black;
+    }
+
+    /* Компетенции */
+    .competence {
+        color: black;
+    }
+
+    /* Достижения */
+    .html-widget-my-savings2-value-amount-count {
+        color: black;
+    }
+
+    .html-widget-unfinished-measure-count {
+        color: black;
+    }
+
+    .attainment {
+        color: black;
+    }
+
+    /* Оценка Корпоративных компетенций */
+    .assessments-character1 {
+        color: black;
+    }
+
+    .assessments-prSurveyLink1 {
+        color: black;
+    }
+
+    .assessments-color1 {
+        color: black;
+    }
+
+    .assessments-character2 {
+        color: black;
+    }
+
+    .assessments-prSurveyLink2 {
+        color: black;
+    }
+
+    .assessments-color2 {
+        color: black;
+    }
+
+    .assessments-character3 {
+        color: black;
+    }
+
+    .assessments-prSurveyLink3 {
+        color: black;
+    }
+
+    .assessments-color3 {
+        color: black;
+    }
+
+    .assessments-character4 {
+        color: black;
+    }
+
+    .assessments-prSurveyLink4 {
+        color: black;
+    }
+
+    .assessments-color4 {
+        color: black;
+    }
+
+    .assessments-characterannual {
+        color: black;
+    }
+
+    .assessments-prSurveyLinkannual {
+        color: black;
+    }
+
+    .assessments-colorannual {
+        color: black;
+    }
+
+    .percent {
+        color: black;
+    }
+
+    /* Календарь занятости */
+    .calendar {
+        color: black;
+    }
+
+    /* Сервисы */
+    .isdirector {
+        color: green;
+    }
+</style>
+<!-- Рабочая информация -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/work/info/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.online').html(data.responseData.online); data.component.elements().find('.photo').html(data.responseData.photo); data.component.elements().find('.fio').html(data.responseData.fio); data.component.elements().find('.post').html(data.responseData.post);  data.component.elements().find('.ca').html(data.responseData.ca.join(' | ')); data.component.elements().find('.worktel').html(data.responseData.worktel); data.component.elements().find('.mobtel').html(data.responseData.mobtel); data.component.elements().find('.intertel').html(data.responseData.intertel); data.component.elements().find('.email').html(data.responseData.email); data.component.elements().find('.worplkace').html(data.responseData.worplkace)",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Рабочая информация</b></div><div class='container'><div><i>В сети: </i></div><div class='online'></div></div><div class='container'><div><i>Путь к фото: </i></div><div class='photo'></div></div><div class='container'><div><i>ФИО: </i></div><div class='fio'></div></div><div class='container'><div><i>Должность: <i></i></i></div><div class='post'></div></div><div class='container'><div><i>Подразделение: </i></div><div class='ca'></div></div><div class='container'><div><i>Телефон: <i></i></i></div><div class='worktel'></div></div><div class='container'><div><i>Мобильный телефон: </i></div><div class='mobtel'></div></div><div class='container'><div><i>Внутренний телефон: </i></div><div class='intertel'></div></div><div class='container'><div><i>Рабочая почта: </i></div><div class='email'></div></div><div class='container'><div><i>Место работы: </i></div><div class='worplkace'></div></div></pre>"
+        }
+    }
+</script><!-- Руководитель -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/director/info/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.photodirector').html(data.responseData.photo); data.component.elements().find('.fiodirector').html(data.responseData.fio); data.component.elements().find('.postdirector').html(data.responseData.post)",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Руководитель</b></div><div class='container'><div><i>Путь к фото: </i></div><div class='photodirector'></div></div><div class='container'><div><i>ФИО: </i></div><div class='fiodirector'></div></div><div class='container'><div><i>Должность: </i></div><div class='postdirector'></div></div></pre>"
+        }
+    }
+</script><!-- Общие сведения -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/info/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.birthdate').html(data.responseData.birthdate); data.component.elements().find('.age').html(data.responseData.age); data.component.elements().find('.workbegindate').html(data.responseData.workbegindate); data.component.elements().find('.experience').html(data.responseData.experience); data.component.elements().find('.bio').html(data.responseData.bio); data.component.elements().find('.quote').html(data.responseData.quote); data.component.elements().find('.interests').html(data.responseData.interests.join(' | '))",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Общие сведения</b></div><div class='container'><div><i>Дата рождения: </i></div><div class='birthdate'></div></div><div class='container'><div><i>Возраст: </i></div><div class='age'></div></div><div class='container'><div><i>Дата приема на работу: </i></div><div class='workbegindate'></div></div><div class='container'><div><i>Стаж: </i></div><div class='experience'></div></div><div class='container'><div><i>О себе: </i></div><div class='bio'></div></div><div class='container'><div><i>Любимая цитата: </i></div><div class='quote'></div></div><div class='container'><div><i>Интересы: </i></div><div class='interests'></div></div></pre>"
+        }
+    }
+</script><!-- Образование -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/education/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.eduorg').html(data.responseData.eduorg); data.component.elements().find('.speciality').html(data.responseData.speciality); data.component.elements().find('.additionalspecialities').html(data.responseData.additionalspecialities.join(' | '))",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Образование</b></div><div class='container'><div><i>Учебное заведение: </i></div><div class='eduorg'></div></div><div class='container'><div><i>Факультет: </i></div><div class='speciality'></div></div><div class='container'><div><i>Дополнительное образование: </i></div><div class='additionalspecialities'></div></div></pre>"
+        }
+    }
+</script><!-- Компетенции -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/competence/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.competence').html(data.responseData.join(' | '))",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Компетенции</b></div><div class='container'><div><i>По каким вопросам ко мне можно обращаться: </i></div><div class='competence'></div></div></pre>"
+        }
+    }
+</script><!-- Достижения -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/currentGameAccount"
+        },
+        "onApiCallSuccess": "var currencyCodeToShow = '1';var htmlSting = data.responseData.balanceBeans.filter(function(item) {return item.code === currencyCodeToShow;}).map(function(balanceBean) {return '<span>' + balanceBean.amount + '</span>';}).join(', ');data.component.elements().find('.html-widget-my-savings2-value-amount-count').html(htmlSting);",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Достижения</b></div><div class='container'><div><i>Мои накопления: </i></div><div class='html-widget-my-savings2-value-amount-count'></div></div></pre>"
+        }
+    }
+</script>
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/measureStats/my"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.html-widget-unfinished-measure-count').html(data.responseData.pending);",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div class='container'><div><i>Обязательных мероприятий не завершено: </i></div><div class='html-widget-unfinished-measure-count'></div></div></pre>"
+        }
+    }
+</script>
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/attainment/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.attainment').html(JSON.stringify(data.responseData))",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div class='container'><div><i>Список достижений: </i></div><div class='attainment'></div></div></pre>"
+        }
+    }
+</script><!-- Оценка Корпоративных компетенций -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/competence/assessment/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.assessments-color1').html(data.responseData.assessments[1].color); data.component.elements().find('.assessments-character1').html(data.responseData.assessments[1].character); data.component.elements().find('.assessments-prSurveyLink1').html(data.responseData.assessments[1].prSurveyLink); data.component.elements().find('.assessments-color2').html(data.responseData.assessments[2].color); data.component.elements().find('.assessments-character2').html(data.responseData.assessments[2].character); data.component.elements().find('.assessments-prSurveyLink2').html(data.responseData.assessments[2].prSurveyLink); data.component.elements().find('.assessments-color3').html(data.responseData.assessments[3].color); data.component.elements().find('.assessments-character3').html(data.responseData.assessments[3].character); data.component.elements().find('.assessments-prSurveyLink3').html(data.responseData.assessments[3].prSurveyLink); data.component.elements().find('.assessments-color4').html(data.responseData.assessments[4].color); data.component.elements().find('.assessments-character4').html(data.responseData.assessments[4].character); data.component.elements().find('.assessments-prSurveyLink4').html(data.responseData.assessments[4].prSurveyLink); data.component.elements().find('.assessments-colorannual').html(data.responseData.assessments.annual.color); data.component.elements().find('.assessments-characterannual').html(data.responseData.assessments.annual.character); data.component.elements().find('.assessments-prSurveyLinkannual').html(data.responseData.assessments.annual.prSurveyLink); data.component.elements().find('.percent').html(data.responseData.percent)",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Оценка Корпоративных компетенций </b></div><div class='container'><div><i>Буквенное значение оценки за 1 квартал: </i></div><div class='assessments-character1'></div></div><div class='container'><div><i>Ссылка на анкету оцениваемого за 1 квартал: </i></div><div class='assessments-prSurveyLink1'></div></div><div class='container'><div><i>Цвет оценки за 1 квартал: </i></div><div class='assessments-color1'></div></div><br><div class='container'><div><i>Буквенное значение оценки за 2 квартал: </i></div><div class='assessments-character2'></div></div><div class='container'><div><i>Ссылка на анкету оцениваемого за 2 квартал: </i></div><div class='assessments-prSurveyLink2'></div></div><div class='container'><div><i>Цвет оценки за 2 квартал: </i></div><div class='assessments-color2'></div></div><br><div class='container'><div><i>Буквенное значение оценки за 3 квартал: </i></div><div class='assessments-character3'></div></div><div class='container'><div><i>Ссылка на анкету оцениваемого за 3 квапртал: </i></div><div class='assessments-prSurveyLink3'></div></div><div class='container'><div><i>Цвет оценки за 3 квартал: </i></div><div class='assessments-color3'></div></div><br><div class='container'><div><i>Буквенное значение оценки за 4 квартал: </i></div><div class='assessments-character4'></div></div><div class='container'><div><i>Ссылка на анкету оцениваемого за 4 квартал: </i></div><div class='assessments-prSurveyLink4'></div></div><div class='container'><div><i>Цвет оценки за 4 квартал: </i></div><div class='assessments-color4'></div></div><br><div class='container'><div><i>Буквенное значение оценки за год: </i></div><div class='assessments-characterannual'></div></div><div class='container'><div><i>Ссылка на анкету оцениваемого за год: </i></div><div class='assessments-prSurveyLinkannual'></div></div><div class='container'><div><i>Цвет оценки за год: </i></div><div class='assessments-colorannual'></div></div><br><div class='container'><div><i>Процент: </i></div><div class='percent'></div></div></pre>"
+        }
+    }
+</script><!-- Календарь занятости -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/calendar/self?fromDate=2025-09-01&toDate=2025-09-30"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.calendar').html(JSON.stringify(data.responseData))",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Календарь занятости</b></div><div class='container'><div><i>События: </i></div><div class='calendar'></div></div></pre>"
+        }
+    }
+</script><!-- Сервисы -->
+<script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/is-director/info/self"
+        },
+        "onApiCallSuccess": "data.component.elements().find('.isdirector').html(data.responseData.isdirector);",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": "<pre><div><b>Сервисы</b></div><div class='container'><div><i>Панель руководителя: </i></div><div class='isdirector'></div></div></pre>"
+        }
+    }
+</script>

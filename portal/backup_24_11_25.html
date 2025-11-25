@@ -1,0 +1,1527 @@
+<style type="text/css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+    /* Document
+       ========================================================================== */
+    /**
+     * 1. Correct the line height in all browsers.
+     * 2. Prevent adjustments of font size after orientation changes in iOS.
+     */
+    html {
+        line-height: 1.15;
+        /* 1 */
+        -webkit-text-size-adjust: 100%;
+        /* 2 */
+    }
+
+    /* Sections
+       ========================================================================== */
+    /**
+     * Remove the margin in all browsers.
+     */
+    body {
+        margin: 0;
+    }
+
+    /**
+     * Render the `main` element consistently in IE.
+     */
+    main {
+        display: block;
+    }
+
+    /**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+    h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+    }
+
+    /* Grouping content
+       ========================================================================== */
+    /**
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
+     */
+    hr {
+        box-sizing: content-box;
+        /* 1 */
+        height: 0;
+        /* 1 */
+        overflow: visible;
+        /* 2 */
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+    pre {
+        font-family: monospace, monospace;
+        /* 1 */
+        font-size: 1em;
+        /* 2 */
+    }
+
+    /* Text-level semantics
+       ========================================================================== */
+    /**
+     * Remove the gray background on active links in IE 10.
+     */
+    a {
+        background-color: transparent;
+    }
+
+    /**
+     * 1. Remove the bottom border in Chrome 57-
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
+    abbr[title] {
+        border-bottom: none;
+        /* 1 */
+        text-decoration: underline;
+        /* 2 */
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+        /* 2 */
+    }
+
+    /**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+    b,
+    strong {
+        font-weight: bolder;
+    }
+
+    /**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+    code,
+    kbd,
+    samp {
+        font-family: monospace, monospace;
+        /* 1 */
+        font-size: 1em;
+        /* 2 */
+    }
+
+    /**
+     * Add the correct font size in all browsers.
+     */
+    small {
+        font-size: 80%;
+    }
+
+    /**
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    /* Embedded content
+       ========================================================================== */
+    /**
+     * Remove the border on images inside links in IE 10.
+     */
+    img {
+        border-style: none;
+    }
+
+    /* Forms
+       ========================================================================== */
+    /**
+     * 1. Change the font styles in all browsers.
+     * 2. Remove the margin in Firefox and Safari.
+     */
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit;
+        /* 1 */
+        font-size: 100%;
+        /* 1 */
+        line-height: 1.15;
+        /* 1 */
+        margin: 0;
+        /* 2 */
+    }
+
+    /**
+     * Show the overflow in IE.
+     * 1. Show the overflow in Edge.
+     */
+    button,
+    input {
+        /* 1 */
+        overflow: visible;
+    }
+
+    /**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+    button,
+    select {
+        /* 1 */
+        text-transform: none;
+    }
+
+    /**
+     * Correct the inability to style clickable types in iOS and Safari.
+     */
+    button,
+    [type=button],
+    [type=reset],
+    [type=submit] {
+        -webkit-appearance: button;
+    }
+
+    /**
+     * Remove the inner border and padding in Firefox.
+     */
+    button::-moz-focus-inner,
+    [type=button]::-moz-focus-inner,
+    [type=reset]::-moz-focus-inner,
+    [type=submit]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+    }
+
+    /**
+     * Restore the focus styles unset by the previous rule.
+     */
+    button:-moz-focusring,
+    [type=button]:-moz-focusring,
+    [type=reset]:-moz-focusring,
+    [type=submit]:-moz-focusring {
+        outline: 1px dotted ButtonText;
+    }
+
+    /**
+     * Correct the padding in Firefox.
+     */
+    fieldset {
+        padding: 0.35em 0.75em 0.625em;
+    }
+
+    /**
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
+    legend {
+        box-sizing: border-box;
+        /* 1 */
+        color: inherit;
+        /* 2 */
+        display: table;
+        /* 1 */
+        max-width: 100%;
+        /* 1 */
+        padding: 0;
+        /* 3 */
+        white-space: normal;
+        /* 1 */
+    }
+
+    /**
+     * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+     */
+    progress {
+        vertical-align: baseline;
+    }
+
+    /**
+     * Remove the default vertical scrollbar in IE 10+.
+     */
+    textarea {
+        overflow: auto;
+    }
+
+    /**
+     * 1. Add the correct box sizing in IE 10.
+     * 2. Remove the padding in IE 10.
+     */
+    [type=checkbox],
+    [type=radio] {
+        box-sizing: border-box;
+        /* 1 */
+        padding: 0;
+        /* 2 */
+    }
+
+    /**
+     * Correct the cursor style of increment and decrement buttons in Chrome.
+     */
+    [type=number]::-webkit-inner-spin-button,
+    [type=number]::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    /**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+    [type=search] {
+        -webkit-appearance: textfield;
+        /* 1 */
+        outline-offset: -2px;
+        /* 2 */
+    }
+
+    /**
+     * Remove the inner padding in Chrome and Safari on macOS.
+     */
+    [type=search]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    /**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        /* 1 */
+        font: inherit;
+        /* 2 */
+    }
+
+    /* Interactive
+       ========================================================================== */
+    /*
+     * Add the correct display in Edge, IE 10+, and Firefox.
+     */
+    details {
+        display: block;
+    }
+
+    /*
+     * Add the correct display in all browsers.
+     */
+    summary {
+        display: list-item;
+    }
+
+    /* Misc
+       ========================================================================== */
+    /**
+     * Add the correct display in IE 10+.
+     */
+    template {
+        display: none;
+    }
+
+    /**
+     * Add the correct display in IE 10.
+     */
+    [hidden] {
+        display: none;
+    }
+
+    html {
+        box-sizing: border-box;
+        font-size: 10px;
+        scroll-behavior: smooth;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    @font-face {
+        font-family: "TT_Moscow";
+        font-weight: 400;
+        font-style: normal;
+        src: local("TT_Moscow-Regular"), url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&fileId=600454&downloadFileId=eZl2pLNGA9ABWxhqiF3mZw&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YOjbqZ4XvNoVw18xjf4pBh8S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDWMPlUoTAN2aN2EMPjme005We4MZMdSXWIQwytHS6T81qHNwIMx39OtpS0rgbSE92DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763380775436) format("truetype");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "TT_Moscow";
+        font-weight: 500;
+        font-style: normal;
+        src: local("TT_Moscow-Medium"), url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600453&amp;downloadFileId=-td7zd_l-OviPDIDM604-g&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YFDAuYw2dH00ckv8KAiPSgES1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJID6XsSDOCEp17M38-MsLsMOP8U8DwcCgPPQA53ZB8B-ffv_lj4vXFvuVUHemOFOFQWDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763380758052) format("truetype");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "TT_Moscow";
+        font-weight: 700;
+        font-style: normal;
+        src: local("TT_Moscow-Bold"), url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600452&amp;downloadFileId=DHq_2QPXgaSb7-Lz_kJOaQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YLnCeVTz7WSt97XdZgzbbo0S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICbf6Npf6739Q1Hy7EM9-x7YUaCMfpUunlQuuU5xdzHa4kweytuJxVDVSDL-bSz7hKDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763380739879) format("truetype");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Benzin";
+        font-weight: 400;
+        font-style: normal;
+        src: local("Benzin_Regular"), url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600450&amp;downloadFileId=m8aESPra2lWnbByU0MJJMw&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YC4BzAQrU6OmTzY-HkhcgCAS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIC_8RrZJiGG8Dq2QiSXKsJemABy_SZBh40UlhmCvAfPzYTF9znGgoa0AD2sxuZCtvGDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763380697884) format("truetype");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Benzin";
+        font-weight: 500;
+        font-style: normal;
+        src: local("Benzin_Medium"), url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600449&amp;downloadFileId=SFGIlQfATCOxvBGdbGu43w&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YI_HqAho-Nippk6oCQcSsJUS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDdadj4kdluU1adDu7Ln3MHvr8Wsrtaxro_HF12oFAHJ-HdhvZS4SoLa-prt3SSxS-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763380674769) format("truetype");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "Benzin";
+        font-weight: 700;
+        font-style: normal;
+        src: local("Benzin_Bold"), url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600451&amp;downloadFileId=uKqpHjiqJMQpLgndtDEfEQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YIxKADqMz6vVJJvSM1LeFR0S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBePu4esjtxAZDMj8NTFZAKj_wdHS7nDDSZge6uLUWRPpDXFTd9oNPTj7Vs83OAYD-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763380721736) format("truetype");
+        font-display: swap;
+    }
+
+    body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 360px;
+        min-height: 100vh;
+        font-family: "TT_Moscow", "Benzin", sans-serif;
+        background-color: #f9ffff;
+    }
+
+    section {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+    footer {
+        flex-shrink: 0;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style-type: none !important;
+    }
+
+    button {
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    select {
+        outline: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
+    }
+
+    input[type=search]::-webkit-search-decoration,
+    input[type=search]::-webkit-search-cancel-button,
+    input[type=search]::-webkit-search-results-button,
+    input[type=search]::-webkit-search-results-decoration {
+        display: none;
+    }
+
+    hr,
+    blockquote {
+        margin: 0;
+    }
+
+    hr {
+        border: none;
+    }
+
+    .container {
+        padding-inline: min(6.25vw, 120px);
+    }
+
+    .content {
+        margin-bottom: min(3.65vw, 70px);
+    }
+
+    .content__container {
+        padding-top: min(2.6vw, 50px);
+        -moz-column-gap: min(1.04vw, 20px);
+        column-gap: min(1.04vw, 20px);
+    }
+
+    .estim {
+        border-radius: min(0.52vw, 10px);
+        background-color: white;
+    }
+
+    .estim__list {
+        overflow: hidden;
+        width: 100%;
+        border-radius: min(0.52vw, 10px);
+    }
+
+    .estim__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    .estim__item:not(:last-child) {
+        border-right: 1px solid #e9e9e9;
+    }
+
+    .estim__proc {
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        min-height: min(2.08vw, 40px);
+        font-family: "Benzin";
+        font-size: min(1.04vw, 20px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+        text-align: center;
+        background-color: #e9e9e9;
+        padding-block: min(0.26vw, 5px);
+    }
+
+    .estim__proc::after {
+        content: "";
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        right: -3px;
+        display: none;
+        width: 5px;
+        height: 100%;
+        background-color: #75c669;
+    }
+
+    .estim__date {
+        width: 100%;
+        border-bottom: 1px solid #e9e9e9;
+        font-size: min(1.04vw, 20px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        color: #0e0e0e;
+        text-align: center;
+        padding-block: min(1.46vw, 28px) min(1.15vw, 22px);
+    }
+
+    .estim__level {
+        /* font-family: "TT Moscow Economy"; */
+        font-size: min(3.33vw, 64px);
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        color: black;
+        -webkit-text-stroke-color: black;
+        padding-block: min(2.03vw, 39px) min(2.45vw, 47px);
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .main {
+        padding: min(2.08vw, 40px);
+        border-radius: min(0.52vw, 10px);
+        background-color: #f5f5f5;
+    }
+
+    .main:not(:last-child) {
+        margin-bottom: min(1.04vw, 20px);
+    }
+
+    .main__service {
+        width: 50%;
+    }
+
+    .main__calendar {
+        width: 50%;
+    }
+
+    .main__titleDirector {
+        margin-bottom: min(1.04vw, 20px);
+        font-size: min(1.25vw, 24px) !important;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        color: #b91827;
+    }
+
+    .main h2 {
+        margin-bottom: min(1.04vw, 20px);
+        font-size: min(1.04vw, 20px);
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        color: #b91827;
+    }
+
+    .achiev__top {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: min(0.52vw, 10px);
+        -moz-column-gap: min(0.52vw, 10px);
+        column-gap: min(0.52vw, 10px);
+    }
+
+    .achiev__iconBlock {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: min(0.16vw, 3px);
+    }
+
+    .achiev__blockTop {
+        align-items: center;
+        justify-content: center;
+        width: 32%;
+        min-height: min(7.14vw, 137px);
+        border-radius: min(0.52vw, 10px);
+        background-color: white;
+        -moz-column-gap: min(0.52vw, 10px);
+        column-gap: min(0.52vw, 10px);
+    }
+
+    .achiev__blockTop_event {
+        align-items: flex-start;
+    }
+
+    .achiev__icon {
+        width: min(4.06vw, 78px);
+        height: min(4.06vw, 78px);
+        border: 1px solid black;
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: min(3.07vw, 59px) min(3.07vw, 59px);
+    }
+
+    .achiev__icon_1 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600470&amp;downloadFileId=W8kqI15E14SyjWvHVNtOXw&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YN7rSzSMX9UkqmbNgNNt2GAS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBUU0UjsqGU4_lQTyPdgTGTQVkN1Z0UyniaBnP8eXTSnRORohoW_ZWPu_gTKCq-jxKDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381068566);
+    }
+
+    .achiev__icon_2 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600475&amp;downloadFileId=XDO21SOSrDIWm2whTar3Wg&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YOTxgYvj77yT2dF0cYThNpES1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAc9bdAfpTjgWyIw4Kg9Se8IWOHQ8orfkFH60Uc1I-Wf2ZnZg84t-u58a6ZarWEIeiDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381080939);
+    }
+
+    .achiev__icon_3 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600480&amp;downloadFileId=JXMCWHyknIsLM5-DnbY-oQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YEGuykKAdRN5iEi6riHxcN8S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBwJsfQCfrXNGrq7Jsea2dQp2p0LjCgj3H8skPz2cprui5MGxjKtmSIeBC1eqNI5QWDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381094199);
+    }
+
+    .achiev__icon_4 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600485&amp;downloadFileId=JVOOOZuPYX91Sc-tZKIxVQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YNhSHREZak9IlPIYOc-Fch8S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIChrDoY1dQR5NtO01WV_c_ZNwmcQMhCeviHU4DAruv4Pf9vmnzXH-CX2LpIV0gy8_6DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381109407);
+    }
+
+    .achiev__icon_5 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600490&amp;downloadFileId=VStxYdNxVccsX05KaT3vPQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YOEekeqm29QW7FUBScATTsQS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBg8sjKTBG5dGAbZJ0DLa2O7PelX5Pn_T-x_jMdJssUuyqE710N98CjofYwxNE5EiWDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381124864);
+    }
+
+    .achiev__icon_6 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600495&amp;downloadFileId=-BSOw6tHrO5ZIKW42F2gpQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YBhsleZdJpJasCR0zI-xDqMS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDAply9xVWITI0MpuYun-kbvpxPtLL8ajv3hMALPcINKueZiJB4SmZ3NWwthdkuurSDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381140543);
+    }
+
+    .achiev__icon_7 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600500&amp;downloadFileId=_zkcHcDcj8AcfJI7_1g0ww&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YGGkEmrLwVGiFt8JQI87L5AS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBSVvXx-TA2H9p2HhPtL8Ay9Xoh7JtGDLYA2DmkS7Xj5RkDzsOA7zjbeP1JSonSzwmDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381154721);
+    }
+
+    .achiev__icon_8 {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600505&amp;downloadFileId=1Ii7Zz_OptpiM8nZhnq1Pw&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YHcKTmiSK-g4_kvacNDwVlUS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICAzkJ07AAt-9ZrBARxMbYrSCvzyWlLV8Nq9JIGhy2g61GaptiRQvw4YLcpWX0Kz-CDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381168235);
+    }
+
+    .achiev__bottom {
+        padding: min(1.15vw, 22px) min(1.56vw, 30px);
+        border-radius: min(0.52vw, 10px);
+        background-color: #ffffff;
+        -moz-column-gap: min(0.47vw, 9px);
+        column-gap: min(0.47vw, 9px);
+    }
+
+    .achiev__awards {
+        font-family: "Benzin";
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+        text-align: center;
+    }
+
+    .achiev__eventNum {
+        text-align: center;
+    }
+
+    .achiev__mag {
+        max-width: 45%;
+        font-size: min(0.83vw, 16px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: min(0.94vw, 18px);
+        /* 112.5% */
+        color: #000000;
+        text-align: center;
+    }
+
+    .achiev__coin {
+        font-family: "Benzin";
+        font-size: min(1.56vw, 30px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+        text-align: center;
+    }
+
+    .achiev__coinImg {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: min(1.56vw, 30px);
+        height: min(1.56vw, 30px);
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600460&amp;downloadFileId=7ZxZJ8yVw1vP4XLf2JisYQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YI6HFyYoDw5nNz5ZVq_dzwAS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAE3cckwRvAOg6-4roXRyN7cgGI8pOddadICPXrz6LFYt9c3tjM5vPOzjvi1qls7zCDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381016482);
+    }
+
+    .achiev__event {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: min(1.04vw, 20px);
+    }
+
+    .achiev__event>span {
+        display: block;
+        max-width: 60%;
+        margin-bottom: min(0.52vw, 10px);
+        font-size: min(0.83vw, 16px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: 18px;
+        /* 112.5% */
+        color: #000000;
+        text-align: center;
+    }
+
+    .achiev__eventNum {
+        font-family: "Benzin";
+        font-size: min(1.56vw, 30px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+        text-align: center;
+    }
+
+    .dir {
+        align-items: center;
+    }
+
+    .dir__img {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: min(5.1vw, 98px);
+        height: min(6.46vw, 124px);
+        margin-right: min(1.04vw, 20px);
+        border-radius: min(0.52vw, 10px);
+        /* background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600465&amp;downloadFileId=tLNyWwZtqDwZCeTGwyKNIw&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YOSgoORmMZEbQw_5duTh7WcS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBYL3K4Tqcr9dj2AcAZF-fxNVmSUZqv4jtr-pQHDcg2Wu8hJidtmtQKcWj1suEvqdiDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381040338); */
+    }
+
+    .dir__name {
+        margin-bottom: min(0.52vw, 10px);
+        font-size: min(1.04vw, 20px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .dir__post {
+        display: block;
+        max-width: min(22.81vw, 438px);
+        font-size: min(0.73vw, 14px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .rightBlock {
+        width: 50%;
+    }
+
+    .leftBlock {
+        width: 50%;
+    }
+
+    .leftBlock__serviceBlock {
+        -moz-column-gap: min(1.04vw, 20px);
+        column-gap: min(1.04vw, 20px);
+    }
+
+    .contact__bottom {
+        margin-bottom: min(1.04vw, 20px);
+        font-size: min(1.04vw, 20px);
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        color: #b91827;
+    }
+
+    .contact__bottom>ul {
+        row-gap: min(1.04vw, 20px);
+        display: flex;
+        flex-wrap: wrap;
+        -moz-column-gap: min(3.65vw, 70px);
+        column-gap: min(3.65vw, 70px);
+    }
+
+    .contact__bottom>ul>li {
+        width: -moz-max-content;
+        width: max-content;
+        min-width: min(8.59vw, 165px);
+        max-width: min(11.56vw, 222px);
+    }
+
+    .contact__bottom>ul>li span {
+        display: flex;
+    }
+
+    .contact__bottom>ul>li span:first-child {
+        margin-bottom: min(0.26vw, 5px);
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #646464;
+    }
+
+    .contact__bottom>ul>li span:last-child {
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .contact__num {
+        min-height: min(1.09vw, 21px);
+        position: relative;
+        align-items: center;
+        padding-left: min(1.04vw, 20px);
+    }
+
+    .contact__num>a {
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .contact__num::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: min(0.83vw, 16px);
+        height: min(0.83vw, 16px);
+        padding-left: min(1.04vw, 20px);
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600510&amp;downloadFileId=NZoY6MsA6bdJB5wHXsNLrQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YKFY0A9OlMZlKsXPwtMOQjwS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICTyTVdX1JA_xXqprYQKI_b7UmJJOM3Aln5YRuiWsfXrsbp3tPpEJ5B-vVVduTzI4-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381187893);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .contact__num_mail::after {
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600515&amp;downloadFileId=W5XTmhoOXxa4__75R6YFcQ&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YLbuhRy7-9GZ2tiCqU4DhcUS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIC5f_fVkea7LjeSm4EZf_Iv1Fx0j9uKPjtbR8hNuWsdeKhJJCCydQTPldLkKLdlp9qDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381201889);
+    }
+
+    .contact h2 {
+        margin-bottom: min(1.04vw, 20px);
+        font-size: min(1.04vw, 20px);
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal;
+        color: #b91827;
+    }
+
+    .contact__img {
+        /* background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+        width: min(14.38vw, 276px);
+        min-height: 100%;
+        border-radius: min(0.52vw, 10px);
+        /* background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600455&amp;downloadFileId=g2jTHj4ra8FRSp3QGlP1Cw&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YGp-AUhpxw9Vdvf4ey1DzMYS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICb-LsX3DOnEZnrd0vIQSCagWdsqneKEhvsKgx09th3mj0ykrXdJqEhqoN2lZMGRYCDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763380979806); */
+    }
+
+     .contact__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }
+
+    .contact__top {
+        height: 100%;
+        margin-bottom: min(1.56vw, 30px);
+        padding-bottom: min(1.56vw, 30px);
+        border-bottom: 1px solid rgb(185, 24, 39);
+        -moz-column-gap: min(0.52vw, 10px);
+        column-gap: min(0.52vw, 10px);
+    }
+
+    .contact__descrMan h1>.fio {
+        margin-bottom: min(0.94vw, 18px);
+        font-size: min(1.98vw, 38px);
+        font-weight: 700;
+        font-style: normal;
+        line-height: min(1.98vw, 38px);
+        color: #b91827;
+    }
+
+    .contact__descrMan .contact__online {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: min(1.2vw, 23px);
+        padding-left: min(1.04vw, 20px);
+        font-size: min(0.94vw, 18px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .contact__descrMan .contact__online::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: min(0.78vw, 15px);
+        height: min(0.78vw, 15px);
+        border-radius: 100%;
+        background-color: #07d200;
+    }
+
+    .contact__post {
+        margin-bottom: min(0.78vw, 15px);
+        font-size: min(1.04vw, 20px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .contact__post+ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: min(0.52vw, 10px);
+    }
+
+    .contact__post+ul>li {
+        width: -moz-max-content;
+        width: max-content;
+        padding: min(0.52vw, 10px) min(1.04vw, 20px);
+        border: 1px solid black;
+        border-radius: min(0.52vw, 10px);
+        font-size: min(0.63vw, 12px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .green {
+        color: #57da23;
+        -webkit-text-stroke-color: #119400;
+    }
+
+    .yellow {
+        color: #f3de54;
+        -webkit-text-stroke-color: #b7a218;
+    }
+
+    .back_proc {
+        background-color: #def1db;
+    }
+
+    .lastElemLine.estim__proc::after {
+        display: block;
+    }
+
+    .service__list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: min(1.04vw, 20px);
+    }
+
+    .service__item {
+        width: 46%;
+        min-height: min(8.59vw, 165px);
+        border-radius: min(0.52vw, 10px);
+        background-color: white;
+    }
+
+    .service__svg {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: min(0.89vw, 17px);
+        height: min(0.89vw, 17px);
+        background-image: url(https://neweconom-test.mos.ru/miraclient/Do?doaction=DownloadFileWithStatisticField&amp;fileId=600520&amp;downloadFileId=awp_e5SXfS_6y1_0_bJalA&amp;accessToken=sUtW3nQOcY-oMKgWgGN0YFHmdX0BweurdIfsYpzIHAgS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBxSl4fWQ-CatbbkEaXIrWYg2vFRaoyUotk8utefzqVHzXbjNzmzL-6jHHbyTfmd5yDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&amp;_=1763381220346);
+    }
+
+    .service__linkMain {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: min(0.78vw, 15px);
+        font-size: min(0.83vw, 16px);
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+        text-align: left;
+    }
+
+    .service__linkMain>div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        -moz-column-gap: min(0.26vw, 5px);
+        column-gap: min(0.26vw, 5px);
+    }
+
+    .calendar {
+        width: 50%;
+        height: min(24.84vw, 477px);
+    }
+
+    .main__calendar {
+        margin-bottom: 0 !important;
+    }
+
+    .common__descrBlock:not(:last-child) {
+        margin-bottom: min(1.04vw, 20px);
+    }
+
+    .common__descrBlock>span:first-child {
+        display: block;
+        margin-bottom: min(0.26vw, 5px);
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #646464;
+    }
+
+    .common__descrBlock>span:last-child {
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .common__interestList {
+        flex-wrap: wrap;
+        -moz-column-gap: min(0.31vw, 6px);
+        column-gap: min(0.31vw, 6px);
+    }
+
+    .common__interest {
+        width: -moz-max-content;
+        width: max-content;
+        padding: min(0.52vw, 10px) min(1.04vw, 20px);
+        border: 1px solid #000000;
+        border-radius: min(0.52vw, 10px);
+        font-size: min(0.63vw, 12px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .edu__descrBlock:not(:last-child) {
+        margin-bottom: min(1.04vw, 20px);
+    }
+
+    .edu__descrBlock:last-child {
+        margin-bottom: min(2.5vw, 48px);
+    }
+
+    .edu__descrBlock>span:first-child {
+        display: block;
+        margin-bottom: min(0.26vw, 5px);
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #646464;
+    }
+
+    .edu__descrBlock>span:last-child {
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .comp {
+        min-height: min(20.05vw, 385px);
+    }
+
+    .comp__mainBlock>span:first-child {
+        display: block;
+        margin-bottom: min(0.26vw, 5px);
+        font-size: min(0.83vw, 16px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #646464;
+    }
+
+    .comp__item {
+        width: -moz-max-content;
+        width: max-content;
+        padding: min(0.52vw, 10px) min(1.04vw, 20px);
+        border: 1px solid #000000;
+        border-radius: min(0.52vw, 10px);
+        font-size: min(0.63vw, 12px);
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        color: #000000;
+    }
+
+    .comp__list {
+        flex-wrap: wrap;
+        gap: min(0.31vw, 6px);
+    }
+
+    /*# sourceMappingURL=style.css.map */
+
+    .mira-html-widget-qua-score-character {
+        background-color: transparent !important;
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+<main><section class="content"><div class="container content__container flex"><div class="content__rightBlock rightBlock"><div class="rightBlock__main main main__contact contact"><div class="contact__top flex"><div class="contact__img"><picture> <img alt="Фотография сотрудника" id="img" src="#" /> </picture></div><div class="contact__descrMan"><div id="online">&nbsp;</div><h1>&nbsp;</h1><div class="fio" id="fio">&nbsp;</div><div class="contact__post"><div class="post" id="post">&nbsp;</div></div><ul id="ca"><!-- <li>Департамент экономической политики и развития города Москвы</li>
+                                <li>ГБУ "Миграционный центр"</li>
+                                <li>Проектное управление</li>
+                                <li>Отдел обеспечения и реализации проектов</li> --></ul></div></div><div class="contact__bottom"><h2>Контакты</h2><ul><li><span>Телефон:</span></li><li><span>Мобильный телефон:</span></li><li><span>Место работы: </span></li><li><span>Внутренний телефон:</span></li><li><span>Рабочая почта:</span></li></ul></div></div><div class="rightBlock__main main"><h2 class="main__titleDirector">Руководитель</h2><div class="main__dir dir flex"><div class="dir__img" id="dirImg">&nbsp;</div><div class="dir__descrBlock"><div class="dir__name" id="fioDir">&nbsp;</div></div></div></div><div class="rightBlock__main main"><h2>Достижения</h2><div class="main__achiev achiev"><div class="achiev__top flex"><div class="achiev__blockTop flex"><div class="achiev__coin"><script type="script/component">
+                                                {
+                                                    "rtype": "ApiCallResult",
+                                                    "apiCallAction": {
+                                                        "rtype": "ApiCallAction",
+                                                        "url": "service/v2/currentGameAccount"
+                                                    },
+                                                    "onApiCallSuccess": "var currencyCodeToShow = '1';var htmlSting = data.responseData.balanceBeans.filter(function(item) {return item.code === currencyCodeToShow;}).map(function(balanceBean) {return '<span>' + balanceBean.amount + '</span>';}).join(', ');data.component.elements().find('.html-widget-my-savings2-value-amount-count').html(htmlSting);",
+                                                    "template": {
+                                                        "rtype": "ClientTemplate",
+                                                        "isName": false,
+                                                        "value": "<div class='html-widget-my-savings2-value-amount-count'></div>"
+                                                    }
+                                                }
+                                            </script></div><div class="achiev__coinImg">&nbsp;</div></div><div class="achiev__blockTop flex"><div class="achiev__mag">Магазин подарков</div></div><div class="achiev__blockTop achiev__blockTop_event flex"><div class="achiev__event flex"><span>Обязательные мероприятия</span><div class="achiev__eventNum"><script type="script/component">
+
+                                                {
+                                                    "rtype": "ApiCallResult",
+                                                    "apiCallAction": {
+                                                        "rtype": "ApiCallAction",
+                                                        "url": "service/measureStats/my"
+                                                    },
+                                                    "onApiCallSuccess": "var colorClass = '', htmlSting = data.responseData.pending; if(+htmlSting === 0){colorClass = 'luck-color';} else if (+htmlSting > 0 &amp;&amp; +htmlSting &lt;= 3) {colorClass = 'nice-color';} else if (+htmlSting > 3 &amp;&amp; +htmlSting &lt;= 6) {colorClass = 'valid-color';} else if (+htmlSting > 6 &amp;&amp; +htmlSting &lt;= 9) {colorClass = 'badly-color';} else {colorClass = 'danger-color';}data.component.elements().find('.html-widget-unfinished-measure-count').addClass(colorClass).html(htmlSting);",
+                                                    "template": {
+                                                    "rtype": "ClientTemplate",
+                                                        "isName": false,
+                                                        "value": "<div class='html-widget-unfinished-measure-count'></div>"
+                                                    }
+                                                }
+                                            </script></div></div></div></div><div class="achiev__bottom flex"><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_1">&nbsp;</div><div class="achiev__awards">0</div></div><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_2">&nbsp;</div><div class="achiev__awards">2</div></div><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_3">&nbsp;</div><div class="achiev__awards">2</div></div><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_4">&nbsp;</div><div class="achiev__awards">0</div></div><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_5">&nbsp;</div><div class="achiev__awards">2</div></div><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_6">&nbsp;</div><div class="achiev__awards">2</div></div><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_7">&nbsp;</div><div class="achiev__awards">2</div></div><div class="achiev__iconBlock flex"><div class="achiev__icon achiev__icon_8">&nbsp;</div><div class="achiev__awards">2</div></div><!-- <script type="script/component">
+                                {
+                                    "rtype": "ApiCallResult",
+                                    "apiCallAction": {
+                                        "rtype": "ApiCallAction",
+                                        "url": "service/v2/depstroi/api-func/person/attainment/self"
+                                    },
+                                    "onApiCallSuccess": "data.component.elements().find(&apos;.attainment&apos;).html(JSON.stringify(data.responseData))",
+                                    "template": {
+                                        "rtype": "ClientTemplate",
+                                        "isName": false,
+                                        "value": "<div class=&apos;attainment&apos;></div>"
+                                    }
+                                }
+                                </script> --></div></div></div><div class="rightBlock__main main"><h2>Оценка корпоративных компетенций</h2><div class="main__estim estim flex"><div class="assessments-character31">&nbsp;</div><ul class="estim__list flex"><li class="estim__item"><div class="estim__proc estim__proc_1">&nbsp;</div><div class="estim__date">I кв. 2025</div><div class="estim__level estim__level_1" id="estim1"><script type="script/component">
+                                              {
+                                                  "rtype": "ApiCallResult",
+                                                  "apiCallAction": {
+                                                      "rtype": "ApiCallAction",
+                                                      "url": "service/v2/depstroi/api-func/person/competence/assessment/self"
+                                                  },
+                                                  "onApiCallSuccess": "console.log(data.responseData); document.getElementById('estim1').innerHTML=data.responseData.assessments[1].character; let estimation1 = data.responseData.assessments[1].character; if(estimation1 === \"C\"){document.querySelector(\".estim__level_1\").classList.add(\"yellow\")} else if(estimation1 === \"B\"){document.querySelector(\".estim__level_1\").classList.add(\"green\")}else if(estimation1 === \"A\"){document.querySelector(\".estim__level_1\").classList.add(\"red\")}else{document.querySelector(\".estim__level_1\").classList.add(\"black\")};if(estimation1 === \"A\"||\"B\"||\"C\"||\"D\"||\"E\"){document.querySelector(\".estim__proc_1\").classList.add(\"back_proc\"), document.querySelector(\".estim__proc_1\").innerHTML = \"20%\"};",
+                                                  "template": {
+                                                      "rtype": "ClientTemplate",
+                                                      "isName": false,
+                                                      "value": ""
+                                                  }
+                                              }
+                                          </script></div></li><li class="estim__item"><div class="estim__proc">40%</div><div class="estim__date">II кв. 2025</div><div class="estim__level"><script type="script/component">
+                                              {
+                                                  "rtype": "ApiCallResult",
+                                                  "apiCallAction": {
+                                                      "rtype": "ApiCallAction",
+                                                      "url": "service/v2/depstroi/api-func/person/competence/assessment/self"
+                                                  },
+                                                  "onApiCallSuccess": "data.component.elements().find('.assessments-color1').html(data.responseData.assessments[1].color); data.component.elements().find('.assessments-character1').html(data.responseData.assessments[1].character); data.component.elements().find('.assessments-prSurveyLink1').html(data.responseData.assessments[1].prSurveyLink); data.component.elements().find('.assessments-color2').html(data.responseData.assessments[2].color); data.component.elements().find('.assessments-character2').html(data.responseData.assessments[2].character); data.component.elements().find('.assessments-prSurveyLink2').html(data.responseData.assessments[2].prSurveyLink); data.component.elements().find('.assessments-color3').html(data.responseData.assessments[3].color); data.component.elements().find('.assessments-character3').html(data.responseData.assessments[3].character); data.component.elements().find('.assessments-prSurveyLink3').html(data.responseData.assessments[3].prSurveyLink); data.component.elements().find('.assessments-color4').html(data.responseData.assessments[4].color); data.component.elements().find('.assessments-character4').html(data.responseData.assessments[4].character); data.component.elements().find('.assessments-prSurveyLink4').html(data.responseData.assessments[4].prSurveyLink); data.component.elements().find('.assessments-colorannual').html(data.responseData.assessments.annual.color); data.component.elements().find('.assessments-characterannual').html(data.responseData.assessments.annual.character); data.component.elements().find('.assessments-prSurveyLinkannual').html(data.responseData.assessments.annual.prSurveyLink); data.component.elements().find('.percent').html(data.responseData.percent)",
+                                                  "template": {
+                                                      "rtype": "ClientTemplate",
+                                                      "isName": false,
+                                                      "value": "<div class='assessments-character2'></div>"
+                                                  }
+                                              }
+                                          </script></div></li><li class="estim__item"><div class="estim__proc">60%</div><div class="estim__date">III кв. 2025</div><div class="estim__level"><script type="script/component">
+                                              {
+                                                  "rtype": "ApiCallResult",
+                                                  "apiCallAction": {
+                                                      "rtype": "ApiCallAction",
+                                                      "url": "service/v2/depstroi/api-func/person/competence/assessment/self"
+                                                  },
+                                                  "onApiCallSuccess": "data.component.elements().find('.assessments-color1').html(data.responseData.assessments[1].color); data.component.elements().find('.assessments-character1').html(data.responseData.assessments[1].character); data.component.elements().find('.assessments-prSurveyLink1').html(data.responseData.assessments[1].prSurveyLink); data.component.elements().find('.assessments-color2').html(data.responseData.assessments[2].color); data.component.elements().find('.assessments-character2').html(data.responseData.assessments[2].character); data.component.elements().find('.assessments-prSurveyLink2').html(data.responseData.assessments[2].prSurveyLink); data.component.elements().find('.assessments-color3').html(data.responseData.assessments[3].color); data.component.elements().find('.assessments-character3').html(data.responseData.assessments[3].character); data.component.elements().find('.assessments-prSurveyLink3').html(data.responseData.assessments[3].prSurveyLink); data.component.elements().find('.assessments-color4').html(data.responseData.assessments[4].color); data.component.elements().find('.assessments-character4').html(data.responseData.assessments[4].character); data.component.elements().find('.assessments-prSurveyLink4').html(data.responseData.assessments[4].prSurveyLink); data.component.elements().find('.assessments-colorannual').html(data.responseData.assessments.annual.color); data.component.elements().find('.assessments-characterannual').html(data.responseData.assessments.annual.character); data.component.elements().find('.assessments-prSurveyLinkannual').html(data.responseData.assessments.annual.prSurveyLink); data.component.elements().find('.percent').html(data.responseData.percent)",
+                                                  "template": {
+                                                      "rtype": "ClientTemplate",
+                                                      "isName": false,
+                                                      "value": "<div class='assessments-character3'></div>"
+                                                  }
+                                              }
+                                          </script></div></li><li class="estim__item"><div class="estim__proc">&nbsp;</div><div class="estim__date">IV кв. 2025</div><div class="estim__level"><script type="script/component">
+                                        {
+                                            "rtype": "ApiCallResult",
+                                            "apiCallAction": {
+                                                "rtype": "ApiCallAction",
+                                                "url": "service/v2/depstroi/api-func/person/competence/assessment/self"
+                                            },
+                                            "onApiCallSuccess": "data.component.elements().find('.assessments-color1').html(data.responseData.assessments[1].color); data.component.elements().find('.assessments-character1').html(data.responseData.assessments[1].character); data.component.elements().find('.assessments-prSurveyLink1').html(data.responseData.assessments[1].prSurveyLink); data.component.elements().find('.assessments-color2').html(data.responseData.assessments[2].color); data.component.elements().find('.assessments-character2').html(data.responseData.assessments[2].character); data.component.elements().find('.assessments-prSurveyLink2').html(data.responseData.assessments[2].prSurveyLink); data.component.elements().find('.assessments-color3').html(data.responseData.assessments[3].color); data.component.elements().find('.assessments-character3').html(data.responseData.assessments[3].character); data.component.elements().find('.assessments-prSurveyLink3').html(data.responseData.assessments[3].prSurveyLink); data.component.elements().find('.assessments-color4').html(data.responseData.assessments[4].color); data.component.elements().find('.assessments-character4').html(data.responseData.assessments[4].character); data.component.elements().find('.assessments-prSurveyLink4').html(data.responseData.assessments[4].prSurveyLink); data.component.elements().find('.assessments-colorannual').html(data.responseData.assessments.annual.color); data.component.elements().find('.assessments-characterannual').html(data.responseData.assessments.annual.character); data.component.elements().find('.assessments-prSurveyLinkannual').html(data.responseData.assessments.annual.prSurveyLink); data.component.elements().find('.percent').html(data.responseData.percent)",
+                                            "template": {
+                                                "rtype": "ClientTemplate",
+                                                "isName": false,
+                                                "value": "<div class='assessments-character4'></div>"
+                                            }
+                                        }
+                                    </script></div></li><li class="estim__item"><div class="estim__proc">&nbsp;</div><div class="estim__date">Годовая</div><div class="estim__level"><script type="script/component">
+                                        {
+                                            "rtype": "ApiCallResult",
+                                            "apiCallAction": {
+                                                "rtype": "ApiCallAction",
+                                                "url": "service/v2/depstroi/api-func/person/competence/assessment/self"
+                                            },
+                                            "onApiCallSuccess": "data.component.elements().find('.assessments-color1').html(data.responseData.assessments[1].color); data.component.elements().find('.assessments-character1').html(data.responseData.assessments[1].character); data.component.elements().find('.assessments-prSurveyLink1').html(data.responseData.assessments[1].prSurveyLink); data.component.elements().find('.assessments-color2').html(data.responseData.assessments[2].color); data.component.elements().find('.assessments-character2').html(data.responseData.assessments[2].character); data.component.elements().find('.assessments-prSurveyLink2').html(data.responseData.assessments[2].prSurveyLink); data.component.elements().find('.assessments-color3').html(data.responseData.assessments[3].color); data.component.elements().find('.assessments-character3').html(data.responseData.assessments[3].character); data.component.elements().find('.assessments-prSurveyLink3').html(data.responseData.assessments[3].prSurveyLink); data.component.elements().find('.assessments-color4').html(data.responseData.assessments[4].color); data.component.elements().find('.assessments-character4').html(data.responseData.assessments[4].character); data.component.elements().find('.assessments-prSurveyLink4').html(data.responseData.assessments[4].prSurveyLink); data.component.elements().find('.assessments-colorannual').html(data.responseData.assessments.annual.color); data.component.elements().find('.assessments-characterannual').html(data.responseData.assessments.annual.character); data.component.elements().find('.assessments-prSurveyLinkannual').html(data.responseData.assessments.annual.prSurveyLink); data.component.elements().find('.percent').html(data.responseData.percent)",
+                                            "template": {
+                                                "rtype": "ClientTemplate",
+                                                "isName": false,
+                                                "value": "<div class='assessments-characterannual'></div>"
+                                            }
+                                        }
+                                    </script></div></li></ul></div></div></div><div class="content__leftBlock leftBlock"><div class="leftBlock__serviceBlock flex"><div class="leftBlock__main main main__service service"><h2>Сервисы</h2><ul class="service__list flex"><li class="service__item"><a class="service__linkMain" href="#" target="_blank"><div>Избраннное<div class="service__svg">&nbsp;</div></div> </a></li><li class="service__item"><a class="service__linkMain" href="#" target="_blank">План адаптации </a></li><li class="service__item"><a class="service__linkMain" href="#" target="_blank">Мое обучение </a></li><li class="service__item"><a class="service__linkMain" href="#" target="_blank">Мое обучение </a></li></ul></div><div class="leftBlock__main main leftBlock__calendar calendar"><h2>Календарь</h2></div></div><div class="leftBlock__main main leftBlock__common common"><h2>Общие сведения</h2><div class="common__descrBlock"><span>Дата рождения:</span> <span class="common__info common__info_birth"> <script type="script/component">
+                                      {
+                                          "rtype": "ApiCallResult",
+                                          "apiCallAction": {
+                                              "rtype": "ApiCallAction",
+                                              "url": "service/v2/depstroi/api-func/person/info/self"
+                                          },
+                                          "onApiCallSuccess": "data.component.elements().find('.birthdate').html(data.responseData.birthdate); data.component.elements().find('.age').html(data.responseData.age); data.component.elements().find('.workbegindate').html(data.responseData.workbegindate); data.component.elements().find('.experience').html(data.responseData.experience); data.component.elements().find('.bio').html(data.responseData.bio); data.component.elements().find('.quote').html(data.responseData.quote); data.component.elements().find('.interests').html(data.responseData.interests.join(' | '))",
+                                          "template": {
+                                              "rtype": "ClientTemplate",
+                                              "isName": false,
+                                              "value": "<div class='birthdate'></div>"
+                                          }
+                                      }
+                                  </script> </span></div><div class="common__descrBlock"><span>Дата приема на работу:</span> <span class="common__info common__info_work"> <script type="script/component">
+                                      {
+                                          "rtype": "ApiCallResult",
+                                          "apiCallAction": {
+                                              "rtype": "ApiCallAction",
+                                              "url": "service/v2/depstroi/api-func/person/info/self"
+                                          },
+                                          "onApiCallSuccess": "data.component.elements().find('.birthdate').html(data.responseData.birthdate); data.component.elements().find('.age').html(data.responseData.age); data.component.elements().find('.workbegindate').html(data.responseData.workbegindate); data.component.elements().find('.experience').html(data.responseData.experience); data.component.elements().find('.bio').html(data.responseData.bio); data.component.elements().find('.quote').html(data.responseData.quote); data.component.elements().find('.interests').html(data.responseData.interests.join(' | '))",
+                                          "template": {
+                                              "rtype": "ClientTemplate",
+                                              "isName": false,
+                                              "value": "<div class='workbegindate'></div>"
+                                          }
+                                      }
+                                  </script> </span></div><div class="common__descrBlock"><span>Стаж:</span> <span class="common__info common__info_work"> <script type="script/component">
+                                      {
+                                          "rtype": "ApiCallResult",
+                                          "apiCallAction": {
+                                              "rtype": "ApiCallAction",
+                                              "url": "service/v2/depstroi/api-func/person/info/self"
+                                          },
+                                          "onApiCallSuccess": "data.component.elements().find('.birthdate').html(data.responseData.birthdate); data.component.elements().find('.age').html(data.responseData.age); data.component.elements().find('.workbegindate').html(data.responseData.workbegindate); data.component.elements().find('.experience').html(data.responseData.experience); data.component.elements().find('.bio').html(data.responseData.bio); data.component.elements().find('.quote').html(data.responseData.quote); data.component.elements().find('.interests').html(data.responseData.interests.join(' | '))",
+                                          "template": {
+                                              "rtype": "ClientTemplate",
+                                              "isName": false,
+                                              "value": "<div class='experience'></div>"
+                                          }
+                                      }
+                                  </script> </span></div><div class="common__descrBlock"><span>О себе::</span> <span class="common__info common__info_about"> <script type="script/component">
+                                      {
+                                          "rtype": "ApiCallResult",
+                                          "apiCallAction": {
+                                              "rtype": "ApiCallAction",
+                                              "url": "service/v2/depstroi/api-func/person/info/self"
+                                          },
+                                          "onApiCallSuccess": "data.component.elements().find('.birthdate').html(data.responseData.birthdate); data.component.elements().find('.age').html(data.responseData.age); data.component.elements().find('.workbegindate').html(data.responseData.workbegindate); data.component.elements().find('.experience').html(data.responseData.experience); data.component.elements().find('.bio').html(data.responseData.bio); data.component.elements().find('.quote').html(data.responseData.quote); data.component.elements().find('.interests').html(data.responseData.interests.join(' | '))",
+                                          "template": {
+                                              "rtype": "ClientTemplate",
+                                              "isName": false,
+                                              "value": "<div class='bio'></div>"
+                                          }
+                                      }
+                                  </script> </span></div><div class="common__descrBlock"><span>Любимая цитата:</span> <span class="common__info common__info_word"> <script type="script/component">
+                                      {
+                                          "rtype": "ApiCallResult",
+                                          "apiCallAction": {
+                                              "rtype": "ApiCallAction",
+                                              "url": "service/v2/depstroi/api-func/person/info/self"
+                                          },
+                                          "onApiCallSuccess": "data.component.elements().find('.birthdate').html(data.responseData.birthdate); data.component.elements().find('.age').html(data.responseData.age); data.component.elements().find('.workbegindate').html(data.responseData.workbegindate); data.component.elements().find('.experience').html(data.responseData.experience); data.component.elements().find('.bio').html(data.responseData.bio); data.component.elements().find('.quote').html(data.responseData.quote); data.component.elements().find('.interests').html(data.responseData.interests.join(' | '))",
+                                          "template": {
+                                              "rtype": "ClientTemplate",
+                                              "isName": false,
+                                              "value": "<div class='quote'></div>"
+                                          }
+                                      }
+                                  </script> </span></div><div class="common__descrBlock"><span>Интересы:</span><ul class="flex common__interestList"><!-- <li class="common__interest">Шахматы</li>
+                                    <li class="common__interest">Цветы</li>
+                                    <li class="common__interest">Животные</li>
+                                    <li class="common__interest">World of tanks</li>
+                                    <li class="common__interest">Велоспорт</li> --><script type="script/component">
+                                      {
+                                          "rtype": "ApiCallResult",
+                                          "apiCallAction": {
+                                              "rtype": "ApiCallAction",
+                                              "url": "service/v2/depstroi/api-func/person/info/self"
+                                          },
+                                          "onApiCallSuccess": "data.component.elements().find('.birthdate').html(data.responseData.birthdate); data.component.elements().find('.age').html(data.responseData.age); data.component.elements().find('.workbegindate').html(data.responseData.workbegindate); data.component.elements().find('.experience').html(data.responseData.experience); data.component.elements().find('.bio').html(data.responseData.bio); data.component.elements().find('.quote').html(data.responseData.quote); data.component.elements().find('.interests').html(data.responseData.interests.join(' | '))",
+                                          "template": {
+                                              "rtype": "ClientTemplate",
+                                              "isName": false,
+                                              "value": "<div class='interests'></div>"
+                                          }
+                                      }
+                                  </script></ul></div></div><div class="leftBlock__main main leftBlock__edu edu"><h2>Образование</h2><div class="edu__descrBlock"><span>Учебное заведение:</span> <span class="edu__descr edu__descr_uni"> <script type="script/component">
+                                    {
+                                        "rtype": "ApiCallResult",
+                                        "apiCallAction": {
+                                            "rtype": "ApiCallAction",
+                                            "url": "service/v2/depstroi/api-func/person/education/self"
+                                        },
+                                        "onApiCallSuccess": "data.component.elements().find('.eduorg').html(data.responseData.eduorg); data.component.elements().find('.speciality').html(data.responseData.speciality); data.component.elements().find('.additionalspecialities').html(data.responseData.additionalspecialities.join(' | '))",
+                                        "template": {
+                                            "rtype": "ClientTemplate",
+                                            "isName": false,
+                                            "value": "<div class='eduorg'></div>"
+                                        }
+                                    }
+                                </script> </span></div><div class="edu__descrBlock"><span>Факультет:</span> <span class="edu__descr edu__descr_uni"> <script type="script/component">
+                                    {
+                                        "rtype": "ApiCallResult",
+                                        "apiCallAction": {
+                                            "rtype": "ApiCallAction",
+                                            "url": "service/v2/depstroi/api-func/person/education/self"
+                                        },
+                                        "onApiCallSuccess": "data.component.elements().find('.eduorg').html(data.responseData.eduorg); data.component.elements().find('.speciality').html(data.responseData.speciality); data.component.elements().find('.additionalspecialities').html(data.responseData.additionalspecialities.join(' | '))",
+                                        "template": {
+                                            "rtype": "ClientTemplate",
+                                            "isName": false,
+                                            "value": "<div class='speciality'></div>"
+                                        }
+                                    }
+                                </script> </span></div><div class="edu__descrBlock"><span>Дополнительное образование:</span> <span class="edu__descr edu__descr_uni"> <!-- Образовательные онлайн курсы Skillbox<br>
+                                    Образовательные онлайн курсы Skillaz<br>
+                                    Курсы повышения квалификации от ВШЭ --> <script type="script/component">
+                                    {
+                                        "rtype": "ApiCallResult",
+                                        "apiCallAction": {
+                                            "rtype": "ApiCallAction",
+                                            "url": "service/v2/depstroi/api-func/person/education/self"
+                                        },
+                                        "onApiCallSuccess": "data.component.elements().find('.eduorg').html(data.responseData.eduorg); data.component.elements().find('.speciality').html(data.responseData.speciality); data.component.elements().find('.additionalspecialities').html(data.responseData.additionalspecialities.join(' | '))",
+                                        "template": {
+                                            "rtype": "ClientTemplate",
+                                            "isName": false,
+                                            "value": "<div class='additionalspecialities'></div>"
+                                        }
+                                    }
+                                </script> </span></div></div><div class="leftBlock__main main leftBlock__comp comp"><h2>Компетенции</h2><div class="comp__mainBlock"><span>По каким вопросам ко мне можно обращаться:</span><ul class="comp__list flex"><!-- <li class="comp__item">Дизайн</li>
+                                    <li class="comp__item">Копоративный портал</li>
+                                    <li class="comp__item">Создание плакатов</li>
+                                    <li class="comp__item">Создание открыток</li>
+                                    <li class="comp__item">Фотосессии</li>
+                                    <li class="comp__item">Оформление презентаций</li> --><script type="script/component">
+                                        {
+                                            "rtype": "ApiCallResult",
+                                            "apiCallAction": {
+                                                "rtype": "ApiCallAction",
+                                                "url": "service/v2/depstroi/api-func/person/competence/self"
+                                            },
+                                            "onApiCallSuccess": "data.component.elements().find('.competence').html(data.responseData.join(' | '))",
+                                            "template": {
+                                                "rtype": "ClientTemplate",
+                                                "isName": false,
+                                                "value": "<div class='competence'></div>"
+                                            }
+                                        }
+                                    </script></ul></div></div></div></div></section></main><!-- Блок контакты --><script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/work/info/self"
+        },
+        "onApiCallSuccess": "console.log(data.responseData); document.getElementById('fio').innerHTML=data.responseData.fio; document.getElementById('post').innerHTML=data.responseData.post; document.getElementById('online').innerHTML=data.responseData.online ? 'В сети' : 'Не в сети'; document.getElementById('online').classList.add(data.responseData.online ? 'online' : 'offline'); document.getElementById('ca').innerHTML=data.responseData.ca; document.getElementById('worktel').innerHTML=data.responseData.worktel; document.getElementById('mobtel').innerHTML=data.responseData.mobtel; document.getElementById('worplkace').innerHTML=data.responseData.worplkace; document.getElementById('intertel').innerHTML=data.responseData.intertel; document.getElementById('email').innerHTML=data.responseData.email; document.getElementById('img').src = data.responseData.photo;",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": ""
+        }
+
+    }
+</script><!-- Блок руководитель --><script type="script/component">
+    {
+        "rtype": "ApiCallResult",
+        "apiCallAction": {
+            "rtype": "ApiCallAction",
+            "url": "service/v2/depstroi/api-func/person/director/info/self"
+        },
+        "onApiCallSuccess": "console.log(data.responseData); document.getElementById('fioDir').innerHTML=data.responseData.fio; document.getElementById('postdirector').innerHTML=data.responseData.post; document.getElementById('dirImg').style.backgroundImage = 'url(' + data.responseData.photo + ')'; ",
+        "template": {
+            "rtype": "ClientTemplate",
+            "isName": false,
+            "value": ""
+        }
+    }
+</script><script>
+
+    // let estimation = document.querySelectorAll('.estim__level')
+
+
+    // estimation.forEach(e => {
+    //     if(e.textContent === "B") {
+    //         e.classList.add("green")
+    //     } else if(e.textContent === "C") {
+    //         e.classList.add("yellow")
+    //     } else {
+    //         e.classList.add("red")
+    //     }
+    // })
+
+
+
+
+    // if (assessments_character3.textContent.trim() === "") {
+    //     assessments_character3.classList.add("red");
+    // } else if (assessments_character3.textContent.trim() === "B") {
+    //     assessments_character3.classList.add("green");
+    // } else {
+    //     assessments_character3.classList.add("yellow");
+    // }
+
+    let proc = document.querySelectorAll('.estim__proc')
+
+    proc.forEach(e => {
+        if (e.textContent !== "") {
+            e.classList.add("back_proc")
+        }
+    })
+
+    let lastElemWithClass
+
+    for (let i = proc.length - 1; i >= 0; i--) {
+        if (proc[i].classList.contains("back_proc")) {
+            lastElemWithClass = proc[i];
+            break
+        }
+    }
+
+    lastElemWithClass.classList.add('lastElemLine')
+
+</script>
